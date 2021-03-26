@@ -23,9 +23,9 @@
 
 
  
- const clientId = 'f8ba8b4ca0654ac29c51398bf523577a';
+ const clientId = '';
  console.log(clientId)
- const clientSecret = '3e31eadabc3f42ad8bbdb3b518528002';
+ const clientSecret = '';
  console.log(clientSecret)
  const redirectUri = `http://localhost:${port}/getTokens`;
  const clientAppUri = 'http://localhost:8888/homePage';
