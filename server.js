@@ -20,12 +20,10 @@
  const app = express();
  const port = 8888;
  app.use(cors()).use(cookieParser());
-
-
  
- const clientId = 'f8ba8b4ca0654ac29c51398bf523577a';
+ const clientId = process.env.CLIENT_ID;
  console.log(clientId)
- const clientSecret = '3e31eadabc3f42ad8bbdb3b518528002';
+ const clientSecret = process.env.CLIENT_SECRET;
  console.log(clientSecret)
  const redirectUri = `http://localhost:${port}/getTokens`;
  const clientAppUri = 'http://localhost:8888/homePage';
