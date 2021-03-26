@@ -15,13 +15,12 @@ if(tokenFromHash.accessToken) {
   localStorage.setItem('token', tokenFromHash.accessToken);
 };
 let accessToken = localStorage.getItem('token');
-
 const localHostUrl = 'http://localhost:8888/newAccessToken';
-const liveHostUrl = 'https://spotify-auth-serverr.glitch.me/newAccessToken';
+const liveHostUrl = 'https://moods-music.glitch.me/newAccessToken';
 
 // generate new access token and store it in locl storage
 const generateNewAccessToken = () => {
-  fetch(localHostUrl)
+  fetch(liveHostUrl)
     .then(res => res.json())
     .then((data) => {
       localStorage.setItem('token', data.accessToken);
